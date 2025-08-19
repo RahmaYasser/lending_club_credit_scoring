@@ -1,0 +1,35 @@
+{
+    "source": {
+        "type": "DelimitedTextSource",
+        "storeSettings": {
+            "type": "AzureBlobStorageReadSettings",
+            "maxConcurrentConnections": 1,
+            "recursive": false,
+            "enablePartitionDiscovery": false
+        },
+        "formatSettings": {
+            "type": "DelimitedTextReadSettings"
+        }
+    },
+    "sink": {
+        "type": "DelimitedTextSink",
+        "storeSettings": {
+            "type": "AzureBlobFSWriteSettings",
+            "maxConcurrentConnections": 1
+        },
+        "formatSettings": {
+            "type": "DelimitedTextWriteSettings",
+            "quoteAllText": true,
+            "fileExtension": ".txt"
+        }
+    },
+    "enableStaging": false,
+    "translator": {
+        "type": "TabularTranslator",
+        "typeConversion": true,
+        "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+        }
+    }
+}
