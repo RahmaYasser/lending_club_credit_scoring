@@ -1,0 +1,22 @@
+{
+	"exists": true,
+	"size": 137350934,
+	"itemName": "lending_club_core_features.csv.gz",
+	"lastModified": "2025-08-19T15:59:55Z",
+	"columnCount": 20,
+	"effectiveIntegrationRuntime": "AutoResolveIntegrationRuntime (East US)",
+	"executionDuration": 3,
+	"durationInQueue": {
+		"integrationRuntimeQueue": 11
+	},
+	"billingReference": {
+		"activityType": "PipelineActivity",
+		"billableDuration": [
+			{
+				"meterType": "AzureIR",
+				"duration": 0.016666666666666666,
+				"unit": "Hours"
+			}
+		]
+	}
+}
